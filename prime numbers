@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<pthread.h>
+
+int num,sum,flag,i,j;
+void *printPrimeNumbers()
+void *getUserInput()
+int main()
+{
+    pthread_t input_thread, output_thread;
+
+    //first thread
+    pthread_create(&input_thread,NULL,getUserInput,NULL);
+    pthread_join(input_thread,NULL);
+
+    
+    //second thread
+    pthread_create(&output_thread,NULL,&printPrimeNumbers,NULL);
+    pthread_join(output_thread,NULL); 
+}
