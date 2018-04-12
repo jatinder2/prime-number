@@ -3,7 +3,7 @@
 #include<unistd.h>
 #include<pthread.h>
 
-int num,sum,flag,i,j;
+int num,flag,i,j;
 void *printPrimeNumbers()
 void *getUserInput()
 int main()
