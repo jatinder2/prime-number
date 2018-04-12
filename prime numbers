@@ -19,3 +19,34 @@ int main()
     pthread_create(&output_thread,NULL,&printPrimeNumbers,NULL);
     pthread_join(output_thread,NULL); 
 }
+void *getUserInput()
+{
+printf("enter number \n");
+ scanf("%d",&num);
+ }
+void *printPrimeNumbers()
+{
+if(num==1||num==0)
+{
+printf("1 & 0 are not prime number/n");
+}
+ else
+{ 
+for(i=2;i<=num;i++)
+      {
+    flag=0;
+    for(j=2;j<i;j++)
+{
+    if(i%j==0)
+     
+     {
+    flag=1;
+     }
+ }
+ if(flag==0)
+
+ {
+ printf(" prime number is %d\n",i);
+ }
+ }
+}}
