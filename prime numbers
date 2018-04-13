@@ -4,8 +4,8 @@
 #include<pthread.h>
 
 int num,flag,i,j;
-void *printPrimeNumbers()
-void *getUserInput()
+void *printPrimeNumbers();
+void *getUserInput();
 int main()
 {
     pthread_t input_thread, output_thread;
